@@ -575,6 +575,10 @@ def login_callback(email, password):
         st.toast("Invalid email or password.")
 
 def main():
+
+    background_image_path = "static/image.jpg"  # Adjust the path accordingly
+    set_background(background_image_path)
+
     # Create a session state object
     if 'user' not in st.session_state:
         st.session_state.user = None
